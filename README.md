@@ -1,2 +1,6 @@
 # vox-cli
-vox front end cli
+
+## Command List
+
+### create New project
+> vox new projectName
