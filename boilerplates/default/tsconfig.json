@@ -1,0 +1,63 @@
+{
+  // https://www.typescriptlang.org/docs/handbook/compiler-options.html
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": false,
+    "experimentalDecorators": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es2018",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es2017",
+      "es7"
+    ],
+    "types": [
+      "node",
+      "jest",
+      "./typings"
+    ],
+    "noEmit": false,
+    "esModuleInterop": true,
+    // react source-map 中jsx会被转义成React.createElement()
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@common/*": [
+        "src/common/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@shared/*": [
+        "src/shared/*"
+      ],
+      "@component/*": [
+        "src/shared/component/*"
+      ],
+      "@entity/*": [
+        "src/shared/entity/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "typings"
+  ],
+  "exclude": [
+    "node_modules",
+    "config",
+    "public",
+    "**/*.ejs"
+  ]
+}
