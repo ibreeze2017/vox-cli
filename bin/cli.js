@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
-const { getProjectPath } = require("../lib/utils/helper");
 const program = require("commander");
-const packageInfo = require(getProjectPath("package.json"));
+const packageInfo = require("../package.json");
 program
   .version(packageInfo.version)
   .option("-i, --init", "init a tex base project")

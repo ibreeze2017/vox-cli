@@ -1,26 +1,27 @@
 module.exports = {
   inject: {},
   page: {
-    title: "微风文档",
+    name: 'index',
+    title: '微风文档',
     filename: `index.html`,
-    template: `./src/pages/index.ejs`
+    template: `./src/pages/index/index.ejs`,
   },
   dll: [
     {
-      name: "bundle",
+      name: 'bundle',
       entry: [
-        "react",
-        "react-dom",
-        "react-router",
-        "react-redux",
-        "redux-saga",
-        "react-router-dom",
-        "highlight.js",
-        "marked",
-        "axios",
-        "for-editor",
-        "crypto-js"
-      ]
-    }
-  ]
+        'react',
+        'react-dom',
+        'react-router',
+        'react-redux',
+        'redux-saga',
+        'react-router-dom',
+        'highlight.js',
+        'marked',
+        'axios',
+        'for-editor',
+        'crypto-js',
+      ],
+    },
+  ],
 };
