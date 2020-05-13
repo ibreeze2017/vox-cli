@@ -1,0 +1,37 @@
+{
+  // https://www.typescriptlang.org/docs/handbook/compiler-options.html
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es2018",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es2017",
+      "es7"
+    ],
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "noEmit": true
+  },
+  "include": [
+    "typings/**/*.ts",
+    "src/**/*.ts",
+    "demo/index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "config",
+    "public"
+  ]
+}

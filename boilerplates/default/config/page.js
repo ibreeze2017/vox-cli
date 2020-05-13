@@ -4,7 +4,6 @@ module.exports = {
     name: 'index',
     title: '微风文档',
     filename: `index.html`,
-    template: `./src/pages/index/index.ejs`,
   },
   dll: [
     {
